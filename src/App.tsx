@@ -83,12 +83,14 @@ function App() {
           <Grid item xs={2} lg={2}>
             <Input1 value={input1Value} onChange={(e: React.ChangeEvent<HTMLInputElement>) => onInput1ValueChange(e)}/>
             <br/>
-            {input1Value}
+          </Grid>
+          <Grid item xs={2} lg={2}>
+            +
           </Grid>
           <Grid item xs={2} lg={2}>
             <Input2 value={input2Value} onChange={(e: React.ChangeEvent<HTMLInputElement>) => onInput2ValueChange(e)}/>
             <br/>
-            {input2Value}
+            
           </Grid>
           <Grid item xs={2} lg={2}>
             =
