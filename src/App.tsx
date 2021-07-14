@@ -6,9 +6,9 @@ import Button from '@material-ui/core/Button';
 
 import { calculateAction } from './actions/calculate';
 
-import Input1 from './Input1';
-import Input2 from './Input2';
-import SumValueComponent from './SumValueComponent';
+import Input1ValueComponent from './Input1ValueComponent';
+import Input2ValueComponent from './Input2ValueComponent';
+import CalculateValueComponent from './CalculatedValueComponent';
 import SumButtonComponent from './SumButtonComponent';
 import ClearButtonComponent from './ClearButtonComponent';
 
@@ -94,7 +94,7 @@ function App() {
             =
           </Grid>
           <Grid item xs={2} lg={2}>
-            <SumValueComponent value={calculateValue}/>
+            <CalculatedValueComponent value={calculateValue}/>
           </Grid>
           <Grid item xs={2} lg={2}>
             <SumButtonComponent onClick={() => sumValues()}>Sum</SumButtonComponent><ClearButtonComponent onClick={() => clearSum()}>Clear</ClearButtonComponent>
